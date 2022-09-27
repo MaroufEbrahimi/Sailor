@@ -8,6 +8,7 @@
 body {
    font-family: 'Open Sans', sans-serif;
    color: #444;
+   background-color: #333;
 }
 
 :root {
@@ -44,4 +45,84 @@ a:hover {
 
 h1, h2, h3, h4, h5, h6 {
    font-family: "Raleway", sans-serif;
+}
+
+.container {
+   max-width: 1130px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+
+/* Header */
+header {
+   position: fixed;
+   width: 100%;
+   background: #fff;
+   z-index: 2;
+}
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   padding: 27px 0;
+}
+
+.header .logo {
+   font-size: 28px;
+   margin: 0;
+   padding: 0;
+   font-weight: 700;
+   text-transform: uppercase;
+   line-height: 1;
+}
+
+.header .logo a {
+   color: #556270;
+}
+
+.nav_links {
+   display: flex;
+}
+
+.nav_links ul {
+   display: flex;
+   list-style: none;
+}
+
+.nav_links li {
+   padding: 5px 16px 0;
+}
+
+.nav_links li a {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #556270;
+   font-size: 15px;
+   font-family: "Poppins", sans-serif;
+   transition: .3s;
+}
+
+.nav_links li a:hover,
+.nav_links .active {
+   color: var(--gen-color);
+}
+
+.nav_links .get_started_div {
+   margin-top: 5px;
+}
+
+.nav_links .get_started {
+   background: var(--gen-color);
+   color: #fff;
+   padding: 10px 25px;
+   border-radius: 4px;
+   font-weight: 400;
+   margin-left: 20px;
+}
+
+.nav_links .get_started:hover {
+   color: #fff;
+   background: #e1444d;
 }
