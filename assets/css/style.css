@@ -65,7 +65,7 @@ header {
 .header {
    display: flex;
    justify-content: space-between;
-   padding: 27px 0;
+   padding: 26px 0 25px 0;
 }
 
 .header .logo {
@@ -91,7 +91,7 @@ header {
 }
 
 .nav_links li {
-   padding: 5px 16px 0;
+   padding: 5px 16px 10px;
 }
 
 .nav_links li a {
@@ -125,4 +125,86 @@ header {
 .nav_links .get_started:hover {
    color: #fff;
    background: #e1444d;
+}
+
+/* drop down */
+.drop_down {
+   display: none;
+   animation: d_d .2s ease-in-out;
+}
+
+@keyframes d_d {
+   from {
+      top: 80px;
+   }
+   to {
+      top: 50px;
+   }
+}
+
+.nav_links ul li i {
+   font-size: 12px;
+}
+
+.bi-chevron-down {
+   margin-left: 3px;
+}
+
+.nav_links ul li:hover .drop_down {
+   position: absolute;
+   display: block;
+   color: #000;
+   background: #fff;
+   margin-left: -15px;
+   margin-top: 10px;
+   z-index: 1000;
+   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+   transition: .3s;
+}
+
+.drop_down ul {
+   display: block;
+   padding: 10px 8px;
+}
+
+.drop_down ul li {
+   width: 185px;
+   padding: 12px;
+   transition: all .4s ease-in-out;
+}
+
+.drop_down ul li a {
+   font-size: 15px;
+   color: #303030;
+   font-weight: 400;
+   transition: all .3s ease-in-out;
+}
+
+.bi-chevron-right {
+   float: right;
+}
+
+.deep_drop_down {
+   display: none;
+   animation: d_d_d .3s;
+}
+
+@keyframes d_d_d {
+   from {
+      left: 60px;
+   }
+   to {
+      left: 20px;
+   }
+}
+
+.deep_right:hover .deep_drop_down {
+   position: absolute;
+   display: block;
+   margin-top: -30px;
+   margin-left: -210px;
+   background: #fff;
+   z-index: 1000;
+   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+   transition: all 1s ease-in-out;
 }
