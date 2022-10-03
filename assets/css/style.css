@@ -29,10 +29,6 @@ body {
    border-radius: 10px;
 }
 
-::selection {
-   color: var(--gen-color);
-}
-
 a {
    text-decoration: none;
    color: #d9232d;
@@ -43,7 +39,12 @@ a:hover {
    color: #e24d55;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
    font-family: "Raleway", sans-serif;
 }
 
@@ -137,6 +138,7 @@ header {
    from {
       top: 80px;
    }
+
    to {
       top: 50px;
    }
@@ -193,6 +195,7 @@ header {
    from {
       left: 60px;
    }
+
    to {
       left: 20px;
    }
@@ -207,4 +210,86 @@ header {
    z-index: 1000;
    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
    transition: all 1s ease-in-out;
+}
+
+
+/* Showcase */
+.showcase {
+   height: 100vh;
+   position: relative;
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+.showcase .showcase_content {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh;
+   opacity: 0;
+   z-index: -1;
+   transition: opacity 1s ease-in-out;
+}
+
+.showcase .showcase_content::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(30, 35, 40, 0.6);
+}
+
+.showcase .showcase_content img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+   -webkit-user-drag: none;
+   --user-drag: none;
+}
+
+.showcase .showcase_content .showcase_box {
+   position: absolute;
+   width: 100%;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: #fff;
+   line-height: 40px;
+}
+
+.showcase .showcase_content .showcase_box h1 {
+   text-transform: capitalize;
+   margin-bottom: 30px;
+   margin-top: 30px;
+   font-size: 48px;
+   font-weight: 700;
+}
+
+.showcase .showcase_content .showcase_box p {
+   line-height: 26px;
+   font-size: 18px;
+   margin-bottom: 35px;
+   margin-top: 34px;
+}
+
+.showcase .showcase_content .showcase_box a {
+   padding: 12px 32px;
+   background: var(--gen-color);
+   border-radius: 4px;
+   color: #fff;
+   font-size: 14px;
+}
+
+.showcase .showcase_content .showcase_box a:hover {
+   background: #df3740;
 }
