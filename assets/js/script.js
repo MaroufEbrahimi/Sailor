@@ -11,6 +11,11 @@ link_active.forEach(ele => {
    ele.addEventListener('click', activeHeaderLink);
 });
 
+// header-sticky
+const header_scroll = document.querySelector('.header');
+window.addEventListener('scroll', function () {
+   header_scroll.classList.toggle('header_sticky', this.window.scrollY > 0);
+});
 
 // showcase slider
 const showcase_slider = document.querySelectorAll('.showcase_content');
