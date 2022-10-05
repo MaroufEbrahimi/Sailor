@@ -8,7 +8,6 @@
 body {
    font-family: 'Open Sans', sans-serif;
    color: #444;
-   background-color: #333;
 }
 
 :root {
@@ -292,4 +291,57 @@ header {
 
 .showcase .showcase_content .showcase_box a:hover {
    background: #df3740;
+}
+
+/* About */
+.about {
+   padding: 3.6rem 0;
+}
+
+.about .container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+   grid-gap: 3rem;
+}
+
+.about .about_box:first-child h3 {
+   font-size: 3rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   line-height: 60px;
+   margin-bottom: 20px;
+}
+
+.about .about_box:first-child p {
+   font-size: 1.5rem;
+   font-weight: 500;
+   line-height: 32px;
+}
+
+.about .about_box:last-child p {
+   font-size: 16px;
+   line-height: 25px;
+}
+
+.about .about_box:last-child ul {
+   margin-top: 20px;
+   list-style: none;
+}
+
+.about .about_box:last-child ul li {
+   padding: 10px 0 0 28px;
+   position: relative;
+}
+
+.about .about_box:last-child ul i {
+   position: absolute;
+   color: var(--gen-color);
+   font-size: 20px;
+   top: 8px;
+   left: 0;
+}
+
+.about .about_box:last-child p:last-child {
+   margin-top: 20px;
+   font-style: italic;
 }
