@@ -53,6 +53,33 @@ h6 {
    margin: 0 auto;
 }
 
+/* Back to top button */
+.back_to_top {
+   position: fixed;
+   bottom: 15px;
+   right: 22px;
+   width: 40px;
+   height: 40px;
+   z-index: 1000;
+   background: var(--gen-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 4px;
+   transition: all .5s ease-in-out;
+   opacity: 0;
+   cursor: default;
+}
+
+.back_to_top:hover {
+   color: #fff;
+   background: #e1444d;
+}
+
+.back_to_top i {
+   font-size: 28px;
+   color: #fff;
+}
 
 /* Header */
 header {
@@ -60,6 +87,7 @@ header {
    width: 100%;
    background: #fff;
    z-index: 2;
+   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
 .header {
@@ -71,7 +99,6 @@ header {
 
 .header_sticky {
    padding: 18px 0;
-   box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .header .logo {
