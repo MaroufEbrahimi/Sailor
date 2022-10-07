@@ -378,3 +378,35 @@ header {
    margin-top: 20px;
    font-style: italic;
 }
+
+/* clients */
+#clients {
+   background: #f1f1f1;
+   margin-bottom: 60px;
+   padding: 15px 0;
+   text-align: center;
+}
+
+#clients .container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+   grid-column: 2rem;
+}
+
+#clients .container .cli_box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+#clients .container img {
+   max-width: 42%;
+   padding: 15px 0;
+   transition: all .4s ease-in-out;
+   filter: grayscale(100);
+}
+
+#clients .container img:hover {
+   filter: none;
+   transform: scale(1.15);
+}
