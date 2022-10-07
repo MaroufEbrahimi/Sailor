@@ -424,3 +424,49 @@ header {
    filter: none;
    transform: scale(1.15);
 }
+
+/* services */
+#services {
+   margin-bottom: 60px;
+}
+
+#services .ser_boxes {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(420px, auto));
+   grid-column-gap: 1.4rem;
+   grid-row-gap: 1rem;
+}
+
+#services .ser_boxes .ser_box {
+   background: #f6f6f6;
+   padding: 30px;
+   border-radius: 6px;
+}
+
+#services .ser_boxes .ser_box i {
+   float: left;
+   font-size: 40px;
+   color: var(--gen-color);
+}
+
+#services .ser_boxes .ser_box h3 {
+   font-size: 18px;
+   font-weight: 700;
+   margin-left: 70px;
+   margin-bottom: 15px;
+}
+
+#services .ser_boxes .ser_box h3 a {
+   color: #556270;
+   transition: .3s ease-in-out;
+}
+
+#services .ser_boxes .ser_box p {
+   margin-left: 70px;
+   font-size: 14px;
+   line-height: 24px;
+}
+
+#services .ser_boxes .ser_box:hover a {
+   color: var(--gen-color);
+}
