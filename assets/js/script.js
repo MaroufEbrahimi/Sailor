@@ -13,8 +13,10 @@ link_active.forEach(ele => {
 
 // header-sticky
 const header_scroll = document.querySelector('.header');
+const drop_down_scroll = document.querySelector('.drop_down');
 window.addEventListener('scroll', function () {
    header_scroll.classList.toggle('header_sticky', this.window.scrollY > 0);
+   drop_down_scroll.classList.toggle('drop_down_scroll', this.window.scrollY > 0);
 });
 
 // showcase slider
