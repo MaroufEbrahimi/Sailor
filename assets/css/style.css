@@ -176,6 +176,20 @@ header {
    }
 }
 
+.drop_down_scroll {
+   animation: ani_scroll .2s;
+}
+
+@keyframes ani_scroll {
+   from {
+      top: 80px;
+   }
+
+   to {
+      top: 40px;
+   }
+}
+
 .nav_links ul li i {
    font-size: 12px;
 }
