@@ -472,6 +472,10 @@ header {
 }
 
 /* Portfolio */
+.portfolio {
+   margin-bottom: 4rem;
+}
+
 .portfolio .por_btns {
    display: flex;
    text-align: center;
@@ -497,4 +501,20 @@ header {
 .portfolio .por_btns li.por_active {
    color: #fff;
    background: var(--gen-color);
+}
+
+.portfolio_boxes {
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+   grid-gap: 1.5rem;
+}
+
+.portfolio_boxes .por_box {
+   transition: all .3s ease-in-out;
+}
+
+.portfolio_boxes .por_box img {
+   width: 100%;
+   height: 100%;
 }
