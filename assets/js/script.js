@@ -50,3 +50,16 @@ window.addEventListener('scroll', function () {
       back_to_top.style.cursor = 'default';
    }
 });
+
+
+// Portoflio buttons
+const por_active_link = document.querySelectorAll('.por_active_link');
+function por_active_button() {
+   por_active_link.forEach(element => {
+      element.classList.remove('por_active');
+   });
+   this.classList.add('por_active');
+}
+por_active_link.forEach(ele => {
+   ele.addEventListener('click', por_active_button)
+});
