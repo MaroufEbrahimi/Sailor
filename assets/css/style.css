@@ -470,3 +470,31 @@ header {
 #services .ser_boxes .ser_box:hover a {
    color: var(--gen-color);
 }
+
+/* Portfolio */
+.portfolio .por_btns {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+}
+
+.portfolio .por_btns li {
+   list-style: none;
+   padding: 8px 10px;
+   text-transform: uppercase;
+   display: inline-block;
+   font-size: 14px;
+   font-weight: 600;
+   margin: 0 4px;
+   border-radius: 3px;
+   cursor: pointer;
+   color: #444;
+   transition: all .3s ease-in-out;
+}
+
+.portfolio .por_btns li:hover,
+.portfolio .por_btns li.por_active {
+   color: #fff;
+   background: var(--gen-color);
+}
