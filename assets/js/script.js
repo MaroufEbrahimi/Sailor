@@ -63,3 +63,41 @@ function por_active_button() {
 por_active_link.forEach(ele => {
    ele.addEventListener('click', por_active_button)
 });
+
+// Portfolio boxes
+const por_box = document.querySelectorAll('.por_box');
+function active_all_img() {
+   for (ele in por_box) {
+      por_box[ele].style.display = 'grid';
+   }
+}
+
+function active_app_img() {
+   for (ele in por_box) {
+      if (por_box[ele].className == 'por_box por_app') {
+         por_box[ele].style.display = 'grid';
+      } else {
+         por_box[ele].style.display = 'none';
+      }
+   }
+}
+
+function active_card_img() {
+   for (ele in por_box) {
+      if (por_box[ele].className == 'por_box por_card') {
+         por_box[ele].style.display = 'grid';
+      } else {
+         por_box[ele].style.display = 'none';
+      }
+   }
+}
+
+function active_web_img() {
+   for (ele in por_box) {
+      if (por_box[ele].className == 'por_box por_web') {
+         por_box[ele].style.display = 'grid';
+      } else {
+         por_box[ele].style.display = 'none';
+      }
+   }
+}
