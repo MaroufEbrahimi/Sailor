@@ -393,6 +393,34 @@ header {
    font-style: italic;
 }
 
+/* about.html */
+.about_title {
+   padding-top: 5.7rem;
+   background: #f6f3f3;
+}
+
+.about_title .container {
+   display: flex;
+   justify-content: space-between;
+   padding: 15px 0;
+}
+
+.about_title .container h1 {
+   color: #000;
+   font-size: 32px;
+   font-weight: 100;
+}
+
+.about_title .container .about_link{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.about_title .container .about_link a {
+   font-size: 15px;
+}
+
 /* clients */
 #clients {
    background: #f1f1f1;
